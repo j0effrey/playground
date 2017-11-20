@@ -16,7 +16,7 @@ def index():
 def mail():
 	endpoint = '/mail'
 	data = {
-	'to': 'joeffrey.gueroben'
+	'to': 'foo.bar'
 	}
 	result = util_requests.post_json_3pservice(endpoint, data)
 	return result
@@ -26,7 +26,7 @@ def mail():
 def upload():
 	endpoint = 'http://localhost:7001/backend/savefile'
 	email = {
-	'to': 'joeffrey@gmail.com',
+	'to': 'foo.bar@gmail.com',
 	'subject': 'Test Email',
 	'body': 'This is the body.',	
 	}
